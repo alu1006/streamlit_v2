@@ -15,5 +15,5 @@ conn = sqlitecloud.connect(f"sqlitecloud://cxecbykinz.sqlite.cloud:8860/users?ap
 
 c = conn.cursor()
 c.execute('CREATE TABLE IF NOT EXISTS users(username TEXT PRIMARY KEY, password TEXT)')
-conn.commit()
+# conn.commit()
 conn.close()
